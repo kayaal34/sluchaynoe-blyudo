@@ -23,6 +23,9 @@ function handleModuleDirectivesPlugin() {
  */
 export default defineConfig({
   base: '/sluchaynoe-blyudo/',
+  build: {
+    outDir: 'docs', // GitHub Pages için en uygunu
+  },
 
 
   plugins: [
@@ -33,7 +36,4 @@ export default defineConfig({
     }),
   ],
 
-  build: {
-    outDir: 'build',
-  },
 });
